@@ -13,16 +13,16 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #292b2e;        /* color of the tracking area */
+  background: #292b2e;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #171a1d;    /* color of the scroll thumb */
-  border-radius: 10px;       /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
+  background-color: #171a1d;
+  border-radius: 10px;
 }
 
 .navbar {
@@ -37,7 +37,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   height: 80px;
   padding: 0 50px;
-  z-index: 1000; /* Garante que fique acima de outros elementos */
+  z-index: 1000;
 }
 
 .navbar .logo {
@@ -92,4 +92,54 @@ body::-webkit-scrollbar-thumb {
 
 .hire-btn:hover {
   background: #fb8c00;
+}
+
+@media screen and (max-width: 780px) {
+
+  .navbar button {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar h2 {
+    display: none;
+  }
+
+  .navbar ul li a {
+    font-size: 14px;
+  }
+
+  footer .start {
+    top: -8%;
+  }
+
+  footer .start p {
+    display: none;
+  }
+
+  footer .cols .about-col {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+
+  footer .cols .links-col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer .cols .news-col {
+    flex-basis: 100%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
 }
