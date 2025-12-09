@@ -94,6 +94,100 @@ body::-webkit-scrollbar-thumb {
   background: #fb8c00;
 }
 
+.seprator {
+  margin: 120px 50px 30px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  display: inline-block;
+  color: #ffb742;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 50px;
+  margin-bottom: 50px;
+}
+
+.portfolio-box {
+  position: relative;
+  background: #292b2e;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: .5s ease;
+}
+
+.portfolio-box:hover {
+  transform: translateY(-10px);
+  border: 1px solid #ffb742;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f2225;
+}
+
+.portfolio-img img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8;
+  transition: .5s ease;
+  width: 80px;
+}
+
+.portfolio-box:hover .portfolio-img img {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.portfolio-content {
+  padding: 20px;
+}
+
+.portfolio-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.portfolio-content p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.portfolio-content a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #ffb742;
+  border-radius: 50%;
+  color: #ffb742;
+  text-decoration: none;
+  font-size: 20px;
+  transition: .5s ease;
+}
+
+.portfolio-content a:hover {
+  background: #ffb742;
+  color: #212529;
+  box-shadow: 0 0 20px #ffb742;
+}
+
 footer {
   position: relative;
   background: #1c1c1c;
@@ -282,6 +376,16 @@ footer .direitos {
 
   .navbar ul li a {
     font-size: 14px;
+  }
+
+  .seprator {
+    margin-top: 100px;
+    margin-left: 5%; /* Alinhar com o design mobile das outras páginas */
+  }
+
+  .portfolio-container {
+    padding: 0 5%;
+    grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
   }
 
   footer .start {

@@ -94,6 +94,115 @@ body::-webkit-scrollbar-thumb {
   background: #fb8c00;
 }
 
+.seprator {
+  margin: 120px 50px 30px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  display: inline-block;
+  color: #ffb742;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-left h3 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.contact-left p {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-info-item i {
+  font-size: 28px;
+  color: #ffb742;
+  margin-right: 15px;
+  background: #292b2e;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.contact-info-item h4 {
+  color: #fff;
+  font-size: 16px;
+}
+
+.contact-info-item p {
+  margin-bottom: 0;
+  color: #7b7b7b;
+}
+
+.contact-right {
+  flex: 1;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  width: 100%;
+  padding: 15px;
+  background: #292b2e;
+  border: 1px solid transparent;
+  outline: none;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.contact-right input::placeholder,
+.contact-right textarea::placeholder {
+  color: #7b7b7b;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+  border-color: #ffb742;
+  background: #303336;
+}
+
+.contact-right textarea {
+  resize: none;
+}
+
+.contact-right button {
+  width: fit-content;
+  margin-top: 10px;
+}
+
 footer {
   position: relative;
   background: #1c1c1c;
@@ -261,6 +370,19 @@ footer .direitos {
   }
 
 }
+
+@media screen and (max-width: 850px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  .seprator {
+    margin-left: 5%;
+    margin-top: 100px;
+  }
+}
+
 
 @media screen and (max-width: 780px) {
 
