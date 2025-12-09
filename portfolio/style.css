@@ -45,12 +45,6 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
-.navbar .logo a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
 .navbar .logo h2 {
   color: #ffb742;
   font-weight: 600;
@@ -98,54 +92,6 @@ body::-webkit-scrollbar-thumb {
 
 .hire-btn:hover {
   background: #fb8c00;
-}
-
-.main {
-  height: 640px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 80px;
-}
-
-.main h4 {
-  font-size: 32px;
-  color: #fff;
-  font-weight: 600;
-}
-
-.main h4 span {
-  color: #ffb742;
-  text-decoration: underline;
-}
-
-.main p.title {
-  font-size: 44px;
-  font-weight: 600;
-  color: #fff;
-  margin-top: 8px;
-}
-
-.main p.subtitle {
-  font-size: 16px;
-  color: #ccc;
-  margin-top: 20px;
-}
-
-.main img {
-  width: 350px;
-  height: 350px;
-  margin-top: 50px;
-}
-
-.seprator {
-  margin: 50px 50px 30px;
-  padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.08);
-  display: inline-block;
-  color: #ffb742;
-  border-radius: 12px;
 }
 
 footer {
@@ -322,18 +268,6 @@ footer .direitos {
     display: none;
   }
 
-  .main h4 {
-    font-size: 24px;
-  }
-
-  .main p.title {
-    font-size: 36px;
-  }
-
-  .main p.subtitle {
-    font-size: 14px;
-  }
-
 }
 
 @media screen and (max-width: 650px) {
@@ -348,30 +282,6 @@ footer .direitos {
 
   .navbar ul li a {
     font-size: 14px;
-  }
-
-  .main {
-    margin-top: 120px;
-    height: 320px;
-    justify-content: start;
-  }
-
-  .main h4 {
-    font-size: 20px;
-  }
-
-  .main p.title {
-    font-size: 28px;
-  }
-
-  .main p.subtitle {
-    font-size: 12px;
-  }
-
-  .main img {
-    margin-top: 40px;
-    width: 150px;
-    height: 150px;
   }
 
   footer .start {
@@ -399,13 +309,5 @@ footer .direitos {
 }
 
 @media screen and (max-width: 480px) {
-
-  .main p.title {
-    font-size: 18px;
-  }
-
-  .main p.subtitle {
-    font-size: 10px;
-  }
 
 }
