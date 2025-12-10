@@ -62,6 +62,13 @@ body::-webkit-scrollbar-thumb {
   margin-right: 10px;
 }
 
+.navbar #menu-icon {
+  font-size: 36px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
 .navbar ul {
   display: flex;
 }
@@ -336,18 +343,42 @@ footer .direitos {
 
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
 
   .navbar {
-    justify-content: center;
-  }
-
-  .navbar h2 {
-    display: none;
+    justify-content: space-between;
+    padding: 0 20px;
   }
 
   .navbar ul li a {
-    font-size: 14px;
+    font-size: 16px;
+    display: block;
+    margin: 0;
+  }
+
+  .navbar #menu-icon {
+    color: #ffb742;
+    display: block;
+  }
+
+  .navbar ul {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: #212529;
+    border-bottom: #ffb742 solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    display: none; 
+    transition: 0.3s;
+  }
+
+  .navbar ul.active {
+    display: flex;
   }
 
   .main {
